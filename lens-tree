@@ -43,4 +43,4 @@ INPUT_TREE="${1?<input> required}"
 } 1>&2
 
 # output tree hash
-git write-tree --prefix="${sencha_pkg_path}/build"
+git write-tree --prefix="${sencha_pkg_path#./}/build"
